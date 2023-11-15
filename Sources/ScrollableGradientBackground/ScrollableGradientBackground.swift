@@ -75,7 +75,7 @@ public struct ScrollableGradientNavigationStack<Content: View>: View {
                 LinearGradient(
                     gradient:
                     Gradient(
-                        colors: [Color.red, Color.white]
+                        colors: [startColor, endColor]
                     ), startPoint: .top,
                     endPoint: UnitPoint(
                         x: 0.5,
