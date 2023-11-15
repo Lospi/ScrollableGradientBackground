@@ -36,8 +36,8 @@ public struct ScrollableGradientNavigationStack<Content: View>: View {
         )
     }
 
-    init(heightPercentage: Double, maxHeight: Double, minHeight: Double, startColor: Color, endColor: Color,
-         navigationTitle: String, @ViewBuilder content: @escaping () -> Content)
+    public init(heightPercentage: Double, maxHeight: Double, minHeight: Double, startColor: Color, endColor: Color,
+                navigationTitle: String, @ViewBuilder content: @escaping () -> Content)
     {
         self.heightPercentage = heightPercentage
         self.maxHeight = maxHeight
